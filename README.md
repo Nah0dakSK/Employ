@@ -1,1 +1,1 @@
-Website for finding available jobs
+Website for finding available job for you
