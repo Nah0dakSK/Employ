@@ -1,12 +1,14 @@
+import React from "react";
+import Background from "./BackImage.jpg";
+
 function App() {
   return (
-    <div>
-      <p style={{color: "#504F76", backgroundColor: "#504F76", fontSize: "20px"}}>topline</p>
-      <h1 style={{color: "#3688A3", fontFamily: "Arial Black", 
-                  textShadow: "2px 2px 0px  #000, -2px -2px 0px  #000, 2px -2px 0px  #000, -2px 2px 0px  #000;", 
-                  marginTop: "225px", textAlign: "center"}}>JOBSIDE</h1>
-      <img src="./BackImage.jpg" alt="background" />            
-    </div>
+    <header>
+      <div className="container" style={{paddingTop: "80px"}}>
+        <img src={Background}/>
+        <div className="centered" style={{color: "#3688A3"}}>JOBSIDE</div>
+      </div>
+    </header>
   );
-}
+  }
 export default App;
