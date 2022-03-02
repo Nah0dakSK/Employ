@@ -31,6 +31,23 @@
     bottom: 8px;
     right: 16px;
   }
+  .bar {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 25px;
+  }
+  .cont {
+    position: absolute;
+    top: 32.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(27, 27, 27);
+    font-family: Arial Black;
+    font-size: large;
+    padding-left: 22px;
+  }
   
   /* Centered text */
   .centered {
@@ -39,3 +56,63 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .cursorDot {
+    text-align: center;
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    cursor: url(Cursor.jpg) auto;
+  }
+  .press {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .searchInputs {
+    display: flex;
+  }
+  .search input {
+    background-color: rgb(250, 235, 235);
+    border: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 230px;
+  }
+  .searchIcon {
+    height: 60px;
+    width: 50px;
+    background-color: rgb(245, 213, 143);
+    display: grid;
+    place-items: center;
+  }
+  input:focus {
+    outline: none;
+  }
+  .searchIcon svg {
+    font-size: 35px;
+    color: rgb(46, 43, 43);
+  }
+@media only screen and (max-width: 1259px) {
+  .container .bar .centered{
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .container .bar .centered{
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container .bar .centered{
+    flex-wrap: wrap;
+  }
+}
