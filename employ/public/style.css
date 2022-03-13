@@ -1,7 +1,11 @@
+* {
+  background-color: rgba(206, 194, 194, 0.37);
+}
 .container {
     position: relative;
     text-align: center;
     color: white;
+    background: none;
   }
   
   /* Bottom left text */
@@ -24,6 +28,16 @@
     top: 8px;
     right: 16px;
   }
+  .about {
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000;
+    font-family: Arial Black;
+    font-size: 15px;
+    color: orange;
+    text-align: right;
+    padding-right: 70px;
+    transform: translateY(10%);
+    background: none;
+  }
   
   /* Bottom right text */
   .bottom-right {
@@ -33,20 +47,33 @@
   }
   .bar {
     position: absolute;
-    top: 42%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding-left: 25px;
+    background: none;
   }
+  .contact {
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000;
+    font-family: Arial Black;
+    font-size: 15px;
+    color: orange;
+    text-align: right;
+    padding-right: 320px;
+    transform: translateY(200%);
+    background: none;
+}
   .cont {
     position: absolute;
     top: 32.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(27, 27, 27);
+    color: rgb(196, 160, 62);
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000;
     font-family: Arial Black;
     font-size: large;
-    padding-left: 22px;
+    padding-left: 15px;
+    background: none;
   }
   
   /* Centered text */
@@ -55,6 +82,7 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: none;
   }
   .cursorDot {
     text-align: center;
@@ -67,14 +95,71 @@
     transform: translate(-50%, -50%);
     cursor: url(Cursor.jpg) auto;
   }
+  
+  .dataResult {
+    margin-top: 5px;
+    width: 330px;
+    height: 100px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+  }
+  .dataResult::-webkit-scrollbar {
+    display: none;
+    background: none;
+  }
+  .dataResult .dataItem {
+    width: 330px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: Arial;
+    background: none;
+  }
+  .dataItem p{
+    margin-left: 10px;
+    background: none;
+  }
+  a {
+    text-decoration: none;
+    background: none;
+  }
+  a:hover{
+    background-color: #504F76;
+  }
+  #clearBtn {
+    cursor: pointer;
+  }
   .press {
     position: absolute;
     top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .categories {
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000;
+    font-family: Arial Black;
+    font-size: 15px;
+    color: orange;
+    text-align: right;
+    padding-right: 170px;
+    transform: translateY(105%);
+    background: none;
+  }
+  .rectangle {
+    display: inline-block;
+    width: 1550px;
+    height: 100px;
+    background-color: #504F76;
+    transform: translateY(10%);
+  }
   .searchInputs {
     display: flex;
+    margin-top: 105px;
+    background: none;
   }
   .search input {
     background-color: rgb(250, 235, 235);
@@ -85,7 +170,7 @@
     font-size: 18px;
     padding: 15px;
     height: 30px;
-    width: 230px;
+    width: 300px;
   }
   .searchIcon {
     height: 60px;
@@ -100,14 +185,16 @@
   .searchIcon svg {
     font-size: 35px;
     color: rgb(46, 43, 43);
+    background: none;
   }
+
 @media only screen and (max-width: 1259px) {
-  .container .bar .centered{
+   .bar .centered .contact .qna{
     max-width: 500px;
   }
 }
 @media only screen and (max-width: 649px) {
-  .container .bar .centered{
+   .bar .centered .contact .qna{
     max-width: 400px;
   }
 }

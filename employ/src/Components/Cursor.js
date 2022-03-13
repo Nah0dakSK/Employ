@@ -1,5 +1,4 @@
 import { useRef } from "react"
-import App from "../App.js"
 
 const Cursor = () => {
     const dot = useRef(null);
