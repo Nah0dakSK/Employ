@@ -1,11 +1,10 @@
-import Background from "./images/BackImage.jpg"
+import Background from "./Components/images/BackImage.jpg"
 
 function Shopper() {
     return(
         <header>
           <div className="rectangle">
           <p className="contact">HOME</p>
-          <p className="qna">QNA</p>
           <p className="about">ABOUT</p>
         </div>
           <div className="container">

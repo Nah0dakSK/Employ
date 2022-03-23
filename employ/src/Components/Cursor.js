@@ -4,8 +4,7 @@ const Cursor = () => {
     const dot = useRef(null);
 
     return(
-        <>
         <div ref={dot} className="cursorDot"></div>        
-        </>
     )
 }
+export default Cursor;

@@ -1,12 +1,12 @@
 import React from "react";
-import Background from "./images/BackImage.jpg";
+import Background from "./images/BackImage.png";
 
-const About = () => {
+const Contact = () => {
     return(
         <header>
         <div className="rectangle">
           <p className="contact">HOME</p>
-          <p className="about">CONTACT</p>
+          <p className="about">ABOUT</p>
         </div>
           <div className="container">
           <div className="centered" style={{color: "#3688A3", top: "-6%",
@@ -18,4 +18,4 @@ const About = () => {
         </header>
     )
 }
-export default About;
+export default Contact;
