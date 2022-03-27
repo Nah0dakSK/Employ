@@ -1,12 +1,11 @@
 import React from "react";
-import Background from "./images/BackgroundImage.png";
+import Background from "./Components/images/BackgroundImage.png";
 import { Link } from "react-router-dom";
-import Abouts from "./images/about.png";
-import Contacts from "./images/contact.png";
-import Local from "./images/local.png"
+import Abouts from "./Components/images/about.png";
+import Contacts from "./Components/images/contact.png";
+import Local from "./Components/images/local.png"
 
-
-function About() {
+function Locality() {
     return(
         <header>
         <div className="container"></div>
@@ -26,11 +25,10 @@ function About() {
           </div>
         </div>
         <img className="backimg" src={Background} alt="background"/>
-        <text className="text">JOBSIDE is a webside for finding specific and nearest jobs for people around the world. </text>
         <div className="centered">JOBSIDE</div>
         </div>
         <div className="rctngl"></div>
         </header>
     )
 }
-export default About;
+export default Locality;
