@@ -15,7 +15,8 @@ function SearchBar({ placeholder, data }) {
   
       if (searchWord === "") {
         setFilteredData([]);
-      } else {
+      }
+      else {
         setFilteredData(newFilter);
       }
     };
@@ -30,6 +31,7 @@ function SearchBar({ placeholder, data }) {
         <div className="searchInputs">
           <input
             type="text"
+            id="myInput"
             placeholder={placeholder}
             value={wordEntered}
             onChange={handleFilter}
@@ -44,7 +46,7 @@ function SearchBar({ placeholder, data }) {
         </div>
         {filteredData.length != 0 && (
           <div className="dataResult">
-            {filteredData.slice(0, 15).map((value, key) => {
+            {filteredData.slice(0, 15).map((value) => {
               return (
                 <a className="dataItem" href={value.link} target="_blank">
                   <p>{value.title} </p>

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Abouts from "./Components/images/about.png";
 import Contacts from "./Components/images/contact.png";
 import Local from "./Components/images/local.png"
-import Shopper from "./ShopAssist";
 
 function Home() {
   return ( 
@@ -32,11 +31,11 @@ function Home() {
         <div className="bar">
           <SearchBar 
               placeholder="choose a job"
-              data={infodata} 
+              data={infodata}
           />
         </div>                                                                
       </div>
-      <div className="rctngl"></div> 
+      <div className="rctngl"></div>
     </header>
   );
   }
@@ -46,27 +45,22 @@ export default Home;
 
     {
     title: "Shop Assistant",
-    country: "Slovakia",
-    link: {Shopper}
-    },
-    {
-    title: "Builder",
-    country: "Czech Republic",
-    link: ""
+    link: "Shopper\n"
     },
     {
     title: "Salesman",
-    country: "Slovakia",
-    link: ""
+    link: "Salesman\n"
+    },
+    {
+    title: "Builder",
+    link: "Builder\n"
     },
     {
     title: "Assistant",
-    country: "Slovakia",
-    link: ""
+    link: "Assistant\n"
     },
     {
     title: "Busdriver",
-    country: "Slovakia",
-    link: ""
+    link: "Busdriver\n"
     } 
 ]

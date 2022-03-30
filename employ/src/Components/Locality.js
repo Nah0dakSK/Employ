@@ -1,9 +1,11 @@
 import React from "react";
-import Background from "./Components/images/BackgroundImage.png";
+import Background from "./images/BackgroundImage.png";
 import { Link } from "react-router-dom";
-import Abouts from "./Components/images/about.png";
-import Contacts from "./Components/images/contact.png";
-import Local from "./Components/images/local.png"
+import Abouts from "./images/about.png";
+import Contacts from "./images/contact.png";
+import Local from "./images/local.png";
+import Localities from "./images/locality.png";
+import locPoint from "./images/local_point.png"
 
 function Locality() {
     return(
@@ -26,6 +28,8 @@ function Locality() {
         </div>
         <img className="backimg" src={Background} alt="background"/>
         <div className="centered">JOBSIDE</div>
+        <div className="locality"><img src={Localities} alt="locality"></img></div>
+        <div className="locpoint"><img src={locPoint} alt="local-point"></img></div>
         </div>
         <div className="rctngl"></div>
         </header>

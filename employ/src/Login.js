@@ -47,6 +47,10 @@ function LoggedIn() {
       {
         username: "Peter",
         password: "peter02"
+      },
+      {
+        username: "Jana",
+        password: "jana03"
       }
     ];
   

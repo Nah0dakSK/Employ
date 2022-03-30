@@ -1,6 +1,5 @@
 .backimg {
   border-top-left-radius: 30px;
-  background-color: #504F76;
 }
 .container {
     position: relative;
@@ -137,7 +136,7 @@
   /* Centered text */
   .centered {
     position: absolute;
-    top: 5.5%;
+    top: 6.5%;
     left: 50.85%;
     transform: translate(-50%, -50%);
     color: #3688A3; 
@@ -145,25 +144,45 @@
     font-family: Georgia;
     font-weight: bold; 
     font-size: 80px; 
-    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000; 
+    text-shadow: 2px 2px 30px #000, -2px -2px 30px #000, -2px 2px 30px #000, 2px -2px 30px #000; 
     background: none;
   }
-  .cntr {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #3688A3; 
-    text-align: center; 
-    font-family: Arial Black; 
-    font-size: 50px; 
-    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000;
-    background: none;
+  .cctitle {
+    padding-left: 150px;
+    font-size: large;
+    transform: translateY(-670%);
+  }
+  .cctext {
+    padding-left: 150px;
+    transform: translateY(-850%);
+  }
+  .cctext2 {
+    padding-left: 150px;
+    transform: translateY(-840%);
+  }
+  .cctext3 {
+    padding-left: 150px;
+    transform: translateY(-830%);
+  }
+  .cctext4 {
+    padding-left: 150px;
+    transform: translateY(-820%);
+  }
+  .text-medium {
+    padding-left: 150px;
+    transform: translateY(-800%);
+    color: #646464;
+  }
+  .g-0{
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 25px;
+    padding-left: 10px;
+    max-height: 210px;
+    max-width: 550px;
   }
   .comp {
     background-color: #504F76;
     padding-left: 70px;
-    transform: translateY(1%);
+    padding-top: 10px;
   }
   .cursorDot {
     text-align: center;
@@ -219,6 +238,18 @@
     transform: translate(25%, 200%);
     background: none;
   }
+  .locality {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+  }
+  .locpoint {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+  }
   .login {
     color: orange; 
     text-align: right;
@@ -228,37 +259,14 @@
     text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000;
     background-color: #504F76;
   }
-  .press {
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .categories {
-    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000;
-    font-family: Arial Black;
-    font-size: 15px;
-    color: orange;
-    text-align: right;
-    padding-right: 170px;
-    transform: translateY(110%);
-    background: none;
-  }
-  .rectangle {
-    display: inline-block;
-    width: 1570px;
-    height: 100px;
-    transform: translateY(4%);
-    background-color: #504F76;
-  }
   .rect {
     position: absolute;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    top: -29.8%;
+    top: -36%;
     left: 6.5%;
     width: 190px;
-    height: 900px;
+    height: 1000px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transform: translate(-50%, 50%);
     background-color: #d81111;
@@ -270,15 +278,104 @@
     background-color: #aca5a5;
     transform: translateY(-5%);
   }
+  .res {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 40%;
+    background: white;
+  }
+  .res2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 39.75%;
+    width: 545px;
+    background: white;
+  }
+  .res3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    top: 75%;
+    left: 40%;
+    background: white;
+  }
   .text {
     position: absolute;
     color: rgb(173, 171, 167);
     font-family: Arial Black; 
     font-size: 30px;
-    top: 20%;
+    top: 24%;
     left: 50.85%;
     transform: translate(-50%, -50%); 
     text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000, 2px -2px 0px #000;
+    background: none;
+  }
+  .text2 {
+    position: absolute;
+    color: rgb(23, 83, 8);
+    font-family: Arial Black; 
+    font-size: 25px;
+    top: 20%;
+    left: 30.85%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 30px #000; 
+    background: none;
+  }
+  .text3 {
+    position: absolute;
+    color: rgb(209, 125, 16);
+    font-family: Arial Black; 
+    font-size: 25px;
+    top: 20%;
+    left: 48.85%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px #000; 
+    background: none;
+  }
+  .text4 {
+    position: absolute;
+    color: rgb(23, 83, 8);
+    font-family: Arial Black; 
+    font-size: 25px;
+    top: 28%;
+    left: 34.3%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 30px #000; 
+    background: none;
+  }
+  .text5 {
+    position: absolute;
+    color: rgb(209, 125, 16);
+    font-family: Arial Black; 
+    font-size: 25px;
+    top: 28%;
+    left: 48.85%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px #000; 
+    background: none;
+  }
+  .text6 {
+    position: absolute;
+    color: rgb(23, 83, 8);
+    font-family: Arial Black; 
+    font-size: 25px;
+    top: 35%;
+    left: 31.7%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 30px #000; 
+    background: none;
+  }
+  .text7 {
+    position: absolute;
+    color: rgb(209, 125, 16);
+    font-family: Arial Black; 
+    font-size: 25px;
+    top: 35%;
+    left: 44.85%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px #000; 
     background: none;
   }
   .searchInputs {
@@ -322,4 +419,9 @@
    .bar .centered {
     max-width: 400px;
   }
+}
+@media only screen and (max-width: 500px) {
+  .bar .centered {
+   max-width: wrap;
+ }
 }
