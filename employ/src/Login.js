@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Abouts from "./Components/images/about.png";
 import Contacts from "./Components/images/contact.png";
 import Local from "./Components/images/local.png"
+import Mode from "./Components/Mode.tsx"
 
 function Login() {
     return(
@@ -15,13 +16,16 @@ function Login() {
         <div>
         <div className="rect">
           <div className="about">
-            <Link to="/about"><img src={Abouts} alt="about"></img></Link>
+            <Link to="/about"><img className="abt" src={Abouts} alt="about"></img></Link>
           </div>
           <div className="contact">
-            <Link to="/contact"><img src={Contacts} alt="contact"></img></Link>
+            <Link to="/contact"><img className="abt" src={Contacts} alt="contact"></img></Link>
           </div>
           <div className="local">
-            <Link to="/locality"><img src={Local} alt="contact"></img></Link>
+            <Link to="/locality"><img className="abt" src={Local} alt="contact"></img></Link>
+          </div>
+          <div className="mode">
+          <Mode/>
           </div>
         </div>
         <img className="backimg" src={Background} alt="background"/>

@@ -6,6 +6,7 @@ import Shoppers from "../Components/images/shopAssist.png";
 import Abouts from "../Components/images/about.png";
 import Contacts from "../Components/images/contact.png";
 import Local from "../Components/images/local.png";
+import Mode from "../Components/Mode.tsx"
 
 function Shopper() {
     return(
@@ -17,20 +18,23 @@ function Shopper() {
       <div>
         <div className="rect">
           <div className="about">
-            <Link to="/about"><img src={Abouts} alt="about"></img></Link>
+            <Link to="/about"><img className="abt" src={Abouts} alt="about"></img></Link>
           </div>
           <div className="contact">
-            <Link to="/contact"><img src={Contacts} alt="contact"></img></Link>
+            <Link to="/contact"><img className="abt" src={Contacts} alt="contact"></img></Link>
           </div>
           <div className="local">
-            <Link to="/locality"><img src={Local} alt="local"></img></Link>
+            <Link to="/locality"><img className="abt" src={Local} alt="local"></img></Link>
+          </div>
+          <div className="mode">
+          <Mode/>
           </div>
         </div>
         <img className="backimg" src={Background} alt="background"/>
         <div className="centered">JOBSIDE</div>
-        <div className="res"><Card1/></div>
-        <div className="res2"><Card2/></div>
-        <div className="res3"><Card3/></div>
+          <div className="res"><Card1 /></div>
+          <div className="res2"><Card2 /></div>
+          <div className="res3"><Card3 /></div>
         </div>
         <div className="rctngl"></div>
         </header>
@@ -42,8 +46,8 @@ function Card1() {
   return(
         <CCard className="mb-3">
   <CRow className="g-0">
-    <CCol md={4}>
-      <CCardImage src={Shoppers} />
+    <CCol md={4} >
+      <CCardImage className="CC1" src={Shoppers} alt="Shopper"/>
     </CCol>
     <CCol md={8}>
       <CCardBody>
@@ -75,7 +79,7 @@ function Card2() {
         <CCard className="mb-3">
   <CRow className="g-0">
     <CCol md={4}>
-      <CCardImage src={Shoppers} />
+      <CCardImage className="CC1" src={Shoppers} />
     </CCol>
     <CCol md={8}>
       <CCardBody>
@@ -107,7 +111,7 @@ function Card3() {
         <CCard className="mb-3">
   <CRow className="g-0">
     <CCol md={4}>
-      <CCardImage src={Shoppers} />
+      <CCardImage className="CC1" src={Shoppers} />
     </CCol>
     <CCol md={8}>
       <CCardBody>

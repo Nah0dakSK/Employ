@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
 import Home from "./Home";
 import About from "./Components/About";
@@ -9,12 +9,12 @@ import Locality from "./Components/Locality";
 import Shopper from "./jobs/ShopAssist";
 import Builder from "./jobs/Builder";
 import Busdriver from "./jobs/Busdriver";
-import Assistant from "./jobs/Assistant";
 import Salesman from "./jobs/Salesman";
 
 function App() {
     return(
         <header>
+          <div className="size">
         <Router>
             <div className="comp">
             <Link to="/home"><img src={Logo} alt="logo"></img></Link> 
@@ -23,7 +23,6 @@ function App() {
             <Route path="/shopper" element={<Shopper/>}></Route>
             <Route path="/builder" element={<Builder/>}></Route>
             <Route path="/busdriver" element={<Busdriver/>}></Route>
-            <Route path="/assistant" element={<Assistant/>}></Route>
             <Route path="/salesman" element={<Salesman/>}></Route>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/about" element={<About/>}></Route>
@@ -32,6 +31,7 @@ function App() {
             <Route path="/locality" element={<Locality/>}></Route>
           </Routes>
         </Router>
+        </div>
         </header>
     )
 }

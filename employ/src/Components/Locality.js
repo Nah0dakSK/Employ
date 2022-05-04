@@ -6,6 +6,7 @@ import Contacts from "./images/contact.png";
 import Local from "./images/local.png";
 import Localities from "./images/locality.png";
 import locPoint from "./images/local_point.png"
+import Mode from "./Mode.tsx"
 
 function Locality() {
     return(
@@ -17,13 +18,16 @@ function Locality() {
       <div>
         <div className="rect">
           <div className="about">
-            <Link to="/about"><img src={Abouts} alt="about"></img></Link>
+            <Link to="/about"><img className="abt" src={Abouts} alt="about"></img></Link>
           </div>
           <div className="contact">
-            <Link to="/contact"><img src={Contacts} alt="contact"></img></Link>
+            <Link to="/contact"><img className="abt" src={Contacts} alt="contact"></img></Link>
           </div>
           <div className="local">
-            <Link to="/locality"><img src={Local} alt="contact"></img></Link>
+            <Link to="/locality"><img className="abt"src={Local} alt="contact"></img></Link>
+          </div>
+          <div className="mode">
+          <Mode/>
           </div>
         </div>
         <img className="backimg" src={Background} alt="background"/>

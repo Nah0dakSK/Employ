@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import Abouts from "../Components/images/about.png";
 import Contacts from "../Components/images/contact.png";
 import Local from "../Components/images/local.png";
-import Shoppers from "../Components/images/shopAssist.png"
+import Builds from "../Components/images/builder.png";
+import Mode from "../Components/Mode.tsx"
 
 function Builder() {
     return(
@@ -17,13 +18,16 @@ function Builder() {
       <div>
         <div className="rect">
           <div className="about">
-            <Link to="/about"><img src={Abouts} alt="about"></img></Link>
+            <Link to="/about"><img className="abt" src={Abouts} alt="about"></img></Link>
           </div>
           <div className="contact">
-            <Link to="/contact"><img src={Contacts} alt="contact"></img></Link>
+            <Link to="/contact"><img className="abt" src={Contacts} alt="contact"></img></Link>
           </div>
           <div className="local">
-            <Link to="/locality"><img src={Local} alt="contact"></img></Link>
+            <Link to="/locality"><img className="abt" src={Local} alt="contact"></img></Link>
+          </div>
+          <div className="mode">
+          <Mode/>
           </div>
         </div>
         <img className="backimg" src={Background} alt="background"/>
@@ -43,19 +47,19 @@ function Card4() {
           <CCard className="mb-3">
     <CRow className="g-0">
       <CCol md={4}>
-        <CCardImage src={Shoppers} />
+        <CCardImage className="CC2" src={Builds} />
       </CCol>
       <CCol md={8}>
         <CCardBody>
-              <CCardTitle className="cctitle">Shop Assistance</CCardTitle>
+              <CCardTitle className="cctitle">Builder</CCardTitle>
           <CCardText className="cctext">
-            Looking for someone who would like to work in minishop.
+            Looking for someone who can work on buildings.
           </CCardText>
           <CCardText className="cctext2">
-            5€/hour
+            9€/hour
           </CCardText>
           <CCardText className="cctext3">
-            Phone: 0902547878
+            Phone: 0904454878
           </CCardText>
           <CCardText className="cctext4">
             Country: Slovakia
@@ -75,19 +79,19 @@ function Card4() {
           <CCard className="mb-3">
     <CRow className="g-0">
       <CCol md={4}>
-        <CCardImage src={Shoppers} />
+        <CCardImage className="CC2" src={Builds} />
       </CCol>
       <CCol md={8}>
         <CCardBody>
-              <CCardTitle className="cctitle">Shop Assistant</CCardTitle>
+              <CCardTitle className="cctitle">Builders needed</CCardTitle>
           <CCardText className="cctext">
-            If you want to work in a shop join us.
+            Join us!.
           </CCardText>
           <CCardText className="cctext2">
-            4€/hour
+            10€/hour
           </CCardText>
           <CCardText className="cctext3">
-            Phone: 0903587411
+            Phone: 0903975418
           </CCardText>
           <CCardText className="cctext4">
             Country: Czech Republic
@@ -107,19 +111,19 @@ function Card4() {
           <CCard className="mb-3">
     <CRow className="g-0">
       <CCol md={4}>
-        <CCardImage src={Shoppers} />
+        <CCardImage className="CC2" src={Builds} />
       </CCol>
       <CCol md={8}>
         <CCardBody>
-              <CCardTitle className="cctitle">Assistant in Shop</CCardTitle>
+              <CCardTitle className="cctitle">Building specialties</CCardTitle>
           <CCardText className="cctext">
-            Shop Assistents hiring
+            Builders hiring
           </CCardText>
           <CCardText className="cctext2">
-            4.50€/hour
+            11.50€/hour
           </CCardText>
           <CCardText className="cctext3">
-            Phone: 0904875123
+            Phone: 0904957214
           </CCardText>
           <CCardText className="cctext4">
             Country: Slovakia
