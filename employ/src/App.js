@@ -13,11 +13,13 @@ import Salesman from "./jobs/Salesman";
 
 function App() {
     return(
-        <header>
-          <div className="size">
+        <>
         <Router>
-            <div className="comp">
-            <Link to="/home"><img src={Logo} alt="logo"></img></Link> 
+            <div className="header-flex">
+              <div className="centered">JOBSIDE</div>
+              <div className="comp">
+            </div>
+            <Link to="/home"><img src={Logo} className="logo" alt="logo"></img></Link> 
           </div>
           <Routes>
             <Route path="/shopper" element={<Shopper/>}></Route>
@@ -31,8 +33,7 @@ function App() {
             <Route path="/locality" element={<Locality/>}></Route>
           </Routes>
         </Router>
-        </div>
-        </header>
+        </>
     )
 }
 export default App;

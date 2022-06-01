@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 import Abouts from "./Components/images/about.png";
 import Contacts from "./Components/images/contact.png";
 import Local from "./Components/images/local.png"
-import Mode from "./Components/Mode.tsx"
 
 function Login() {
     return(
-        <header>
+        <>
         <div className="container"></div>
           <div className="login">
             <Link to="/login">LOGIN</Link>
@@ -24,16 +23,14 @@ function Login() {
           <div className="local">
             <Link to="/locality"><img className="abt" src={Local} alt="contact"></img></Link>
           </div>
-          <div className="mode">
-          <Mode/>
-          </div>
         </div>
-        <img className="backimg" src={Background} alt="background"/>
+        <img className="backimg2" src={Background} alt="background"/>
+        <div className="fix">
         <LoggedIn/>
-        <div className="centered">JOBSIDE</div>
+        </div>
         </div>
         <div className="rctngl"></div>
-        </header>
+        </>
     )
 }
 export default Login;

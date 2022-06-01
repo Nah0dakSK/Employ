@@ -6,7 +6,6 @@ import Abouts from "../Components/images/about.png";
 import Contacts from "../Components/images/contact.png";
 import Local from "../Components/images/local.png";
 import Builds from "../Components/images/builder.png";
-import Mode from "../Components/Mode.tsx"
 
 function Builder() {
     return(
@@ -26,12 +25,8 @@ function Builder() {
           <div className="local">
             <Link to="/locality"><img className="abt" src={Local} alt="contact"></img></Link>
           </div>
-          <div className="mode">
-          <Mode/>
-          </div>
         </div>
-        <img className="backimg" src={Background} alt="background"/>
-        <div className="centered">JOBSIDE</div>
+        <img className="backimg2" src={Background} alt="background"/>
         <div className="res"><Card4 /></div>
         <div className="res2"><Card5 /></div>
         <div className="res3"><Card6 /></div>

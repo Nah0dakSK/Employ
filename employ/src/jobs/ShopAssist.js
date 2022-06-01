@@ -6,7 +6,6 @@ import Shoppers from "../Components/images/shopAssist.png";
 import Abouts from "../Components/images/about.png";
 import Contacts from "../Components/images/contact.png";
 import Local from "../Components/images/local.png";
-import Mode from "../Components/Mode.tsx"
 
 function Shopper() {
     return(
@@ -26,12 +25,8 @@ function Shopper() {
           <div className="local">
             <Link to="/locality"><img className="abt" src={Local} alt="local"></img></Link>
           </div>
-          <div className="mode">
-          <Mode/>
-          </div>
         </div>
-        <img className="backimg" src={Background} alt="background"/>
-        <div className="centered">JOBSIDE</div>
+        <img className="backimg2" src={Background} alt="background"/>
           <div className="res"><Card1 /></div>
           <div className="res2"><Card2 /></div>
           <div className="res3"><Card3 /></div>
